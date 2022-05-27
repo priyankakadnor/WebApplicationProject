@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+      
+            var x = 10;  // global scope
+            const pi = 3.14;
+            const max = 100;   // global scope
+            function test() {
+                var x = 20;      // function scope
+                const pi = 3.15;
+                console.log("inside the test " + max);
+            }
+
+            function test1() {
+                var x = 20;
+                const pi = 3.15;
+                Console.log("inside the test1" + pi);
+
+            }
+            function test2() {
+                let z = 30;
+                const max = 50;
+                console.log("inside the test2" + pi);
+            }
+            console.log("outside function" + x);
+            {
+                var y = 20;
+                const max = 300;
+                console.log("inside a block" + x);
+                {
+                    var y = 20;
+                }
+            }
+           
+    </script>
+</body>
+</html>

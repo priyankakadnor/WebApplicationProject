@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        Enter The First Number:<input type="text" id="n1" />
+    </p>
+    <p>
+        Enter The Second Number:<input type="text" id="n2" />
+    </p>
+    <p>
+        Results:<input type="text" id="n1" />
+    </p>
+    <p>
+        <input type="button" id="Addition" onclick="addition()" />
+        <input type="button" id="Subtraction" onclick="subtraction()" />
+        <input type="button" id="Multiplication" onclick="multiplication()" />
+        <input type="button" id="Addition" onclick="division()" />
+
+    </p>
+    <script>
+        function addition() {
+
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+
+            var c = parseInt(a) + parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+    </script>
+    <script>
+        function subtraction() {
+
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+
+            var c = parseInt(a) - parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+
+    </script>
+
+    <script>
+        function multiplication() {
+
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+
+            var c = parseInt(a) * parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+    </script>
+    <script>
+        function division() {
+
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+
+            var c = parseInt(a) / parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+    </script>
+
+
+</body>
+</html >

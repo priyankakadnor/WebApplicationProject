@@ -1,0 +1,89 @@
+﻿body
+nav {
+    height: 48px;
+    width: 100%;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+#menu {
+    list-style-type: none;
+    display: inline-flex;
+    float: right;
+}
+
+    #menu li {
+        margin-right: 30px;
+    }
+
+        #menu li a {
+            text-decoration: none;
+        }
+
+
+banner h1 {
+    position: absolute;
+    top: 75px;
+    left: 84px;
+}
+
+.left-panel {
+    position: relative;
+    top: 12%;
+}
+
+div {
+    position: relative;
+    top: -6%;
+    padding-top: 14px
+}
+.Register-content {
+    margin-block-start: 22px;
+    margin-left: 130px;
+ 
+}
+.form-group
+{
+    margin:20px 20px 20px 20px;
+}
+.login-content {
+  
+    padding: 30px 30px 20px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #bfb8b8;
+}
+section{
+    background-color:ghostwhite;
+}
+ul {
+    background-color: ghostwhite;
+}
+.form-label {
+    margin-bottom: -4.5rem;
+}
+.contact-form {
+    padding: 1% 30% 30% 20%;
+}
+table td {
+    width: 36%;
+}
+
+.left-panel {
+    position: relative;
+    top: 12%;
+}
+
+    .left-panel ul li {
+        position: relative;
+        top: 18%;
+        padding-top: 14px
+    }
+.main-content {
+    position:relative;
+    top:-110px;
+    margin-left: 248px;
+    width: 77%;
+    overflow-y: auto;
+}

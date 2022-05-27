@@ -1,0 +1,42 @@
+﻿body
+
+#p1{
+background-color:aqua;
+font-size:40px;
+
+}
+div{
+    background-color:blueviolet;
+    font-size:30px;
+    color:white;
+}
+h1{
+    color:red;
+}
+#p2{
+    background-color:brown;
+}
+.center-aligment {
+    text-align: center
+    /*Tap device*/
+    @media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+
+
+        h1 {
+            color: green;
+            font-size: 25px;
+        }
+    }
+    /* mobile device*/
+    @media only screen and (min-device-width:320px) and (max-device-width:480px) {
+
+        h1 {
+            color: blue;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        ul {
+            display: block;
+        }
+    }

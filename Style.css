@@ -1,0 +1,70 @@
+﻿body
+#p1{
+    background-color:aqua;
+    font-size:40px;
+}
+
+
+
+#p2{
+    background-color:palevioletred;
+}
+    .center-aligment{
+        text-align:center;
+    }
+
+nav {
+    background-color: #A6ACAF;
+    height: 48px;
+    width:100%;
+    z-index:2;
+    position:sticky;
+    top:0;
+}
+#menu{
+    list-style-type:none;
+    display:inline-flex;
+    float:right;
+
+}
+#menu li{
+    margin-right:30px;
+}
+#menu  li  a{
+    text-decoration:none;
+}
+#banner{
+    margin-top:2px;
+    background-image:url('style.jpg');
+    height:300px;
+    width:100%;
+    background-position:bottom;
+
+}
+#banner h1{
+    position:absolute;
+    top:82px;
+    left:84px;
+}
+.main-content{
+    position:relative;
+    top:-110px;
+    margin-left:248px;
+    width:77%;
+    overflow-y:auto;
+}
+table td{
+    width:36%;
+}
+.left-panel{
+    position:relative;
+    top:12%;
+  
+   
+}
+.left-panel ul li {
+    position: relative;
+    top: 18%;
+    padding-top: 14px
+ 
+}

@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="d1">
+    </div>
+    <div id="d2"></div>
+    <div id="d3">
+    </div>
+
+    <script>
+
+        var emp = {};
+        emp.id = 1;
+        emp.name = "priyanka";
+        emp.salary = 23000;
+        const employee =
+        {
+            firstname: "priyanka",
+            lastname: "kadnor",
+            age: 25,
+            fullname: function () {
+                return this.firstname + " " + this.lastname;
+            }
+        }
+        const product = {
+            id: 1,
+            name: "mouse",
+            price: 899,
+            discount: function () {
+                return this.price - 90;
+            },
+            display: function () {
+                return (this.id + " " + this.name + " " + this.price - this.discount());
+            }
+        }
+        const student = {
+            rno: 1,
+            name: "priyanka",
+            m1: 89,
+            m2: 90,
+            m3: 97,
+            information: function () {
+                return ((this.m1 + this.m2 + this.m3) / 300) * 100;
+            }
+
+        }
+        const teacher = {
+            age: 25,
+            fullname: function (city, country) {
+                return this.firstname + " " + this.lastname + " " + city + " " + country;
+
+            }
+        }
+        const member = {
+            firstname: "priyanka",
+            lastname: "kadnor"
+
+        }
+        console.log(employee.firstname + employee.age);
+        console.log(product["name"] + product.price);
+        console.log(emp.salary);
+        // document.getElementById("d1").innerHTML = JSON.stringify(product);
+        //document.getElementById("d2").innerHTML = JSON.stringify(employee);
+        // document.getElementById("d1").innerHTML = student.information();
+        // document.getElementById("d2").innerHTML = product.display();
+        document.getElementById("d1").innerHTML = teacher.fullname.call(member, "pune", "nashik");
+        document.getElementById("d2").innerHTML = teacher.fullname.apply(member, ["malegaon", "nashik"]);
+        // call by bind() function
+        let teacherinfo = teacher.fullname.bind(member);
+        document.getElementById("d3").innerHTML = teacher.fullname.bind(member)();
+
+    </script>
+</body>
+</html>

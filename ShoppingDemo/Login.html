@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    
+    <link href="shopping.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+
+        .carousel-inner {
+            height: 300px;
+        }
+       </style>
+        </head >
+        
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Welcome To Online Shopping</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="ShopHo.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Register.html">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shopabout.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shopcontact.html">Contact Us</a>
+                </li>
+            </ul>
+            <div class="collapse navbar-collapse" id="navbarText">
+
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--  <nav>
+          <section id="banner">
+              <h1> Welcome to Online Shopping </h1>
+          </section>
+          <ul id="menu">
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="Aboutus.html">About Us</a></li>
+              <li><a href="Contactus.html">Contacts</a></li>
+              <li><a href="Register.html">Registration</a></li>
+              <li><a href="Login.html">Login</a></li>
+          </ul>
+      </nav>-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="banner3avif.avif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="banner4.avif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="banner2.avif" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6" style="margin-left: 214px;">
+                <form class="form-group">
+                    <div class="login-content">
+                        <div class="col-lg-12">
+                            <h2>Login Here.....</h2>
+                            <div class="mb-3">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="t1" placeholder="name@example.com">
+                            </div>
+                            <div class="col-lg-12">
+                                <label>Password:</label>
+                                <input type="password" name="pass" id="t2" class="form-control" />
+                            </div>
+                            <div>
+
+                                <p>
+                                    <small id="error" style="color:red"></small>
+                                </p>
+                                <button type="submit" class="btn btn-primary" onclick="return validateUser()">
+                                    Submit
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function validateUser() {
+            var emailid = document.getElementById("t1").value;
+            var password = document.getElementById("t2").value;
+            var email = localStorage.getItem("emailid");
+            var pass = localStorage.getItem("password");
+
+            if (emailid == email && password == pass) {
+                document.getElementById("error").innerHTML = "";
+                alert("Success");
+                return true;
+            }
+            else {
+                alert("fail to login");
+                return false;
+
+            }
+
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+
+</body>
+        </html >
